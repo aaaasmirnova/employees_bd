@@ -23,10 +23,10 @@ pip install -r requirements.txt
 
 ####Настройте базу данных:
 Создайте базу данных в MySQL:
-CREATE DATABASE form_data;
+CREATE DATABASE my_app;
 
 ####Отредактируйте backend/database.py:
-DATABASE_URL = "mysql+pymysql://ваш_пользователь:ваш_пароль@localhost/form_data"
+DATABASE_URL = "mysql+pymysql://ваш_пользователь:ваш_пароль@localhost/my_app"
 
 ####Настройте фронтенд
 bash
