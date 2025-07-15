@@ -41,3 +41,7 @@ python3 -m uvicorn main:app --reload
 bash
 npm start
 Фронтенд откроется на http://localhost:3000
+
+- `POST /submit-form/` - Отправка данных формы
+- `GET /get-records/` - Получение записей с пагинацией (параметры: page, per_page)
+- `DELETE /delete-record/{id}` - Удаление записи по ID
