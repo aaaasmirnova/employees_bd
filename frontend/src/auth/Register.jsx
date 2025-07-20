@@ -1,3 +1,4 @@
+// src/auth/Register.jsx
 import React, { useState } from 'react';
 import { useAuth } from './AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -34,6 +35,9 @@ const Register = () => {
                 />
                 <button type="submit">Зарегистрироваться</button>
             </form>
+            <p>
+                Уже есть аккаунт? <a href="/login">Войти</a>
+            </p>
         </div>
     );
 };
