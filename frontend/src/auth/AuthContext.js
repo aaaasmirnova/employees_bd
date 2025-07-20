@@ -27,8 +27,12 @@ export const AuthProvider = ({ children }) => {
     const login = async (email, password) => {
         try {
             const response = await axios.post('http://localhost:8000/token/', {
-                username: email,
+                username: email,  // Используем username вместо email
                 password
+            }, {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
             });
             localStorage.setItem('token', response.data.access_token);
             setToken(response.data.access_token);
