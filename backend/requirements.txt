@@ -1,4 +1,7 @@
-fastapi==0.68.0
-uvicorn==0.15.0
-sqlalchemy==1.4.23
-pymysql==1.0.2
+fastapi
+uvicorn
+sqlalchemy
+pymysql
+python-jose[cryptography]
+passlib
+bcrypt
